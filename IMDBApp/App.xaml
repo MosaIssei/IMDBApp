@@ -1,0 +1,22 @@
+﻿<Application x:Class="IMDBApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:IMDBApp"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Dictionaries/FontsDictionary.xaml"/>
+                <ResourceDictionary Source="/Dictionaries/ColorsDictionary.xaml"/>
+                <ResourceDictionary Source="/Dictionaries/IconsDictionary.xaml"/>
+                <ResourceDictionary Source="/Dictionaries/TextBoxStylesDictionary.xaml"/>
+                <ResourceDictionary Source="/Dictionaries/ButtonStyleDictionary.xaml"/>
+                <ResourceDictionary Source="/Dictionaries/ScrollBarStyleDictionary.xaml"/>
+                <ResourceDictionary Source="/Dictionaries/ScrollViewerStyleDictionary.xaml"/>
+				<ResourceDictionary Source="/Dictionaries/TextBlockStyleDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

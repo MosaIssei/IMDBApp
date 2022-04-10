@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                    xmlns:s="clr-namespace:System;assembly=mscorlib">
+
+    <s:Double x:Key="MediumSize">15</s:Double>
+    <s:Double x:Key="LargSize">20</s:Double>
+    <s:Double x:Key="XLargSize">25</s:Double>
+    <s:Double x:Key="XXLargSize">30</s:Double>
+</ResourceDictionary>

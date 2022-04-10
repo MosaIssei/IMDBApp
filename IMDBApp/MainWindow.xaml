@@ -1,0 +1,100 @@
+﻿<Window x:Class="IMDBApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IMDBApp"
+        mc:Ignorable="d"
+        FontFamily="Roboto"
+        x:Name="wind"
+        xmlns:cus="clr-namespace:IMDBApp.CustomControls"
+        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="700">
+   
+    <Grid >
+        <DockPanel Background="{DynamicResource PrimeryBackgroundColor}">
+            
+            <!--Header-->
+            <Grid DockPanel.Dock="Top" Background="{DynamicResource BackgroundHeaderColor}">
+
+                <Grid Margin="10">
+
+                    <DockPanel MaxWidth="1280">
+
+                        <Image Source="{StaticResource imdb_Icon}" Width="60" DockPanel.Dock="Left" Margin="10 0 10 0"/>
+
+                        <Button Style="{ StaticResource NonFoucus}" Margin="10 0 25 0" FontWeight="Bold">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{StaticResource MenuIcon}" Width="25"/>
+                                <TextBlock Text="Menu" VerticalAlignment="Center" Margin="10 5" FontSize="15" />
+                            </StackPanel>
+                        </Button>
+
+                        <Button Click="Button_Click" Style="{StaticResource IconButton}" Width="40" Height="40" DockPanel.Dock="Right"  Margin="10 0">
+                            <Image Source="{StaticResource SearchIcon}" Width="25" />
+                        </Button>
+
+                        <TextBox FontSize="13" Height="35" />
+
+                    </DockPanel>
+
+                </Grid>
+
+            </Grid>
+
+            <!--Container-->
+            <Grid Margin="10" MaxWidth="1280">
+
+                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" Padding="0">
+                    <StackPanel Margin="0 0 10 0">
+                        <cus:CardControl  Height="300" HorizontalAlignment="Stretch" Margin="10 10 10 20">
+                            <cus:CardControl.Background>
+                                <SolidColorBrush Color="White" Opacity="0.3"/>
+                            </cus:CardControl.Background>
+                            <cus:CardControl.Content>
+                                <cus:SliderView x:Name="asdasdfklsjdf"/>
+                            </cus:CardControl.Content>
+                        </cus:CardControl>
+
+                        <TextBlock Style="{StaticResource Header}" Margin="10 20 10 10" Text="Top 250 Movies"/>
+                        <cus:CardControl  HorizontalAlignment="Stretch" Height="100">
+                            
+                        </cus:CardControl>
+
+                        <TextBlock Style="{StaticResource Header}" Margin="10 40 10 10" Text="Top 250 TVs"/>
+                        <cus:CardControl HorizontalAlignment="Stretch" Height="100">
+
+                        </cus:CardControl>
+
+                        <!--Footer-->
+                        <StackPanel Margin="0 40 0 0" HorizontalAlignment="Center" Orientation="Horizontal">
+                            <Button Margin="5 0" Style="{StaticResource IconButton}" Width="40" Height="40">
+                                <Image Width="20" Source="{StaticResource facebook}"/>
+                            </Button>
+
+                            <Button Margin="5 0" Style="{StaticResource IconButton}" Width="40" Height="40">
+                                <Image Width="20" Source="{StaticResource Instagram}"/>
+                            </Button>
+
+                            <Button Margin="5 0" Style="{StaticResource IconButton}" Width="40" Height="40">
+                                <Image Width="20" Source="{StaticResource twitch}"/>
+                            </Button>
+
+                            <Button Margin="5 0" Style="{StaticResource IconButton}" Width="40" Height="40">
+                                <Image Width="20" Source="{StaticResource twitter}"/>
+                            </Button>
+
+                            <Button Margin="5 0" Style="{StaticResource IconButton}" Width="40" Height="40">
+                                <Image Width="20" Source="{StaticResource YouTube}"/>
+                            </Button>
+                            
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+                
+            </Grid>
+
+        </DockPanel>
+
+    </Grid>
+
+</Window>
